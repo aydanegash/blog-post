@@ -111,11 +111,11 @@ margin-top: -20%;
 }
 
 .login {
-width: 30%;
+width: 40%;
 height: 50%;
 border: 5px solid #EE6E73;
 padding: 30px;
-margin: 50px;
+/* margin: 50px; */
 justify-content: center;
 position: absolute;
 top: 50%;
@@ -201,7 +201,20 @@ border-radius: 9% ;
 padding: 15px;
 }
 
+.login-btn {
+position: absolute;
+width: 120px;
+border-radius: 9%;
+float: left;
+}
 
+.signup-form-btn {
+position: relative;
+width: 120px;
+border-radius: 9%;
+display: inline;
+float: right;
 
+}
 
 

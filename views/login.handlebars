@@ -1,22 +1,44 @@
-<div class="row">
-  <div class="col-md-6">
-    <h2>Login</h2>
+  <header class="page-title">
+    <h1> Login</h1>
+  </header>
 
+<div class="login">
     <form class="form login-form">
       <div class="form-group">
-        <label for="email-login">email:</label>
+        <label for="email-login"><h4>email:</h4></label>
         <input class="form-input" type="text" id="email-login" />
       </div>
       <div class="form-group">
-        <label for="password-login">password:</label>
+        <label for="password-login"><h4>password:</h4></label>
         <input class="form-input" type="password" id="password-login" />
       </div>
       <div class="form-group">
-        <button class="btn btn-primary" type="submit">login</button>
+        <button class="login-btn" class="btn btn-primary" type="submit">login</button>
+      </div>
+      <div class="form-group">
+        <button class="signup-form-btn" class="btn btn-primary" type="submit">sign up</button>
       </div>
     </form>
   </div>
   <div class="col-md-6">
+
+
+{{!-- <div class="login">
+  <form>
+    <label for="email"><h4>Email:</h4></label><br>
+    <input type="text" id="user-email" name="email" ><br>
+    <label for="email"><h4>Password:</h4></label><br>
+    <input type="text" id="user-password" name="password"><br><br>
+    <center><button class="login-btn" type="button">Login</button></center>
+  </form>
+</div> --}}
+
+
+
+
+
+
+{{!-- 
     <h2>Signup</h2>
 
     <form class="form signup-form">
@@ -37,6 +59,6 @@
       </div>
     </form>
   </div>
-</div>
+</div> --}}
 
 <script src="/js/login.js"></script>
