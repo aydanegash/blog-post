@@ -1,31 +1,26 @@
-<div class="row">
-  <div class="col-auto">
-    <h2>Welcome, {{name}}!</h2>
-  </div>
-</div>
+  <header class="page-title">
+  <h2>Hello, {{name}}!</h2>
+  </header><br><br>
 
-<div class="row mt-4">
-  <div class="col-md-6">
+
+<div class="new-post">
+  {{!-- <div class="col-md-6"> --}}
     <h3>Create a New Post:</h3>
 
     <form class="form new-post-form">
       <div class="form-group">
-        <label for="post-title">post title:</label>
+        <label for="post-title"> <h4>title:</h4></label>
         <input class="form-input" type="text" id="post-title" name="post-title" />
       </div>
-      {{!-- <div class="form-group">
-        <label for="project-funding">needed funding ($):</label>
-        <input class="form-input" type="number" id="project-funding" name="project-funding" />
-      </div> --}}
       <div class="form-group">
-        <label for="post-content">content:</label>
-        <textarea class="form-input" id="post-content" name="post-content"></textarea>
+        <label for="post-content"><h4>content:</h4></label>
+        <input class="form-input" type="text" id="post-content" name="post-content"></input>
       </div>
       <div class="form-group">
-        <button type="submit" class="btn btn-primary">Post</button>
+        <button type="submit" class="btn btn-primary" id="post-btn">Post</button>
       </div>
     </form>
-  </div>
+</div>
 
   {{#if post.length}}
   <div class="col-md-6 post-list">
@@ -37,7 +32,7 @@
         <h4><a href="/post/{{post.id}}">{{project.title}}</a></h4>
       </div>
       <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{post.id}}">DELETE</button>
+        <button class="btn btn-sm btn-danger" id="delete-post-btn" data-id="{{post.id}}">DELETE</button>
       </div>
     </div>
     {{/each}}
@@ -46,3 +41,7 @@
 </div>
 
 <script src="./js/profile.js"></script>
+
+
+
+

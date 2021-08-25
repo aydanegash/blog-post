@@ -1,6 +1,7 @@
-header, .post:not(:last-child) {
+/* header, .post:not(:last-child) {
   border-bottom: 1px solid #ccc;
-}
+} */
+
 
 .no-button {
   background: none;
@@ -22,3 +23,185 @@ header, .post:not(:last-child) {
   font-weight: bold;
   margin-left: -5px;
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(211, 49, 84);
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}  
+
+
+.column {
+  display: flex;
+}
+
+.row {
+  flex: 50%;
+  padding: 100px;
+  box-shadow: 4px 4px 4px 6px rgba(0, 0, 0, 0.493);
+
+}
+
+.card-content {
+font-weight: 700 ;
+font-size: 20px;
+}
+
+body {
+display: flex;
+min-height: 100vh;
+flex-direction: column;
+background-image: url("../images/circleLeaves.jpeg");
+background-repeat: no-repeat;
+background-size: cover;
+font-family: fantasy, Papyrus;
+color:rgb(85, 84, 84);
+}
+
+.card {
+display: flex;
+background-color: rgba(247, 206, 206, 0.753);
+border-radius: 9%;
+text-align: center;
+padding-bottom: 5px;
+padding-right: 50px;
+padding-left: 50px;
+min-height: 240px;
+}
+
+.logo-image{
+width: 100%;
+height: 46px;
+overflow: hidden;
+}
+
+.page-title {
+text-align: center;
+color:rgb(85, 84, 84);
+padding: 15px;
+}
+
+footer {
+position:fixed;bottom:0;left:0;right:0;height:30px;
+background-color: #EE6E73 ;
+height: 50px;
+text-align: center;
+font-weight: 900;
+color:rgb(255, 251, 251);
+font-size: 20px;
+margin-top: -20%;
+}
+
+.login {
+width: 30%;
+height: 50%;
+border: 5px solid #EE6E73;
+padding: 30px;
+margin: 50px;
+justify-content: center;
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, 50%);
+transform: translate(-50%, -50%);
+padding: 2%;
+}
+
+.sign-up {
+width: 40%;
+height: 580px;
+border: 5px solid #EE6E73;
+padding: 10px;
+margin: 50px;
+justify-content: center;
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, 50%);
+transform: translate(-50%, -50%);
+padding: 2%;
+}
+
+
+form h4 {
+font-weight: 900;
+color:rgb(66, 65, 65);
+text-align: left;
+}
+
+form textarea {
+font-weight: 700;
+color:rgb(36, 35, 35);
+}
+
+button {
+background-color: #EE6E73; 
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+box-shadow: 1px 1px #666;
+transform: translateY(9px);
+cursor: pointer;
+justify-content: center;
+}
+
+.new-post {
+padding: 2%;
+margin: 15px;
+text-align: center;
+min-height: 50vh;
+width: 70%;
+height: 60%;
+border: 5px solid #EE6E73;
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+}
+
+.edit-btn {
+position: absolute;
+right:    2%;
+bottom:   16%;
+width: 120px;
+border-radius: 9%;
+padding: 15px;
+}
+
+.comment-btn {
+position: absolute;
+right:    2%;
+bottom:   38%;
+width: 120px;
+height: 55px;
+border-radius: 9% ;
+padding: 15px;
+}
+
+
+
+
+

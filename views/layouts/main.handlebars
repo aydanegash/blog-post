@@ -6,32 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Blog Spot</title>
   <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/jass.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  {{!-- <link rel="stylesheet" href="/css/jass.css"> --}}
 </head>
 
 <body>
   <div class="flex-column justify-space-around">
     <header class="display-flex justify-space-between align-center p-2">
-      <h1>
-        <span role="img" aria-label="money">💸</span>
-        <a href="/">The Blog Spot</a>
-      </h1>
       <nav>
-        <!-- Conditionally render login or logout links -->
-        {{#if logged_in}}
-        <a href="/profile">profile</a> |
-        <button class="no-button" id="logout">logout</button>
-        {{else}}
-        <a href="/login">login</a>
-        {{/if}}
+        <div class="nav-wrapper">
+          <a href="/" class="brand-logo">The Blog Spot</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            {{#if logged_in}}
+            <li><a href="/profile">Dashboard</a></li>
+              <button class="no-button" id="logout">Logout</button>
+            {{else}}
+              <a href="/login">Login</a>
+            {{/if}}
+          </ul>
+        </div>
       </nav>
     </header>
+
     <main class="container container-fluid mt-5">
       <!-- Render the sub layout -->
       {{{ body }}}
     </main>
+
     <footer>
-      
+    <div class="copyright">
+      <p>&copy 2021 - The Blog Spot</p>
+    </div>
     </footer>
   </div>
 
@@ -39,6 +44,8 @@
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
-</body>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+<script type="text/javascript" src="js/materialize.min.js"></script>
 </html>
