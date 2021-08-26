@@ -1,23 +1,23 @@
   <header class="page-title">
   <h2>Hello, {{name}}!</h2>
-  </header><br><br>
+  </header>
 
 
 <div class="new-post">
   {{!-- <div class="col-md-6"> --}}
-    <h3>Create a New Post:</h3>
+    <center><h3>Create a New Post:</h3><center>
 
     <form class="form new-post-form">
       <div class="form-group">
-        <label for="post-title"> <h4>title:</h4></label>
+        <label for="post-title"> <h5>title:</h5></label>
         <input class="form-input" type="text" id="post-title" name="post-title" />
       </div>
       <div class="form-group">
-        <label for="post-content"><h4>content:</h4></label>
+        <label for="post-content"><h5>content:</h5></label>
         <input class="form-input" type="text" id="post-content" name="post-content"></input>
       </div>
       <div class="form-group">
-        <button type="submit" class="btn btn-primary" id="post-btn">Post</button>
+        <button class="post-btn" type="submit" class="btn btn-primary" id="post-btn">Post</button>
       </div>
     </form>
 </div>

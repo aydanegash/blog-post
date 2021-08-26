@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  &nbsp; &nbsp; &nbsp; &nbsp; <title>  the blog spot</title>
+  <title>  the blog spot</title>
   <link rel="stylesheet" href="/css/style.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   {{!-- <link rel="stylesheet" href="/css/jass.css"> --}}
@@ -16,20 +16,19 @@
           <a href="/" class="brand-logo">the blog spot</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             {{#if logged_in}}
-            <li><a href="/profile">dashboard</a></li>
+            <li><a href="/profile">+ new post</a></li>
             <li><a href="/" id="logout">logout</a></li>
              {{!-- <li><a <button class="no-button" id="logout">Logout</button>><li> --}}
             {{else}}
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="/login">login</a></li>
-            <li><a href="/signup" id="signup">sign up</a></li>
+            <li><a href="/login">login </a></li>
             {{/if}}
           </ul>
         </nav>
     </div>
 
-   <header class="display-flex justify-space-between align-center p-2"></header>  
-  </header>
+   {{!-- <header class="display-flex justify-space-between align-center p-2"></header>  
+  </header> --}}
 
     <main class="container container-fluid mt-5">
       <!-- Render the sub layout -->
