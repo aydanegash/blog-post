@@ -23,6 +23,7 @@ router.get('/', async (req, res) => {
     });
   } catch (err) {
     res.status(500).json(err);
+    // res.redirect('login');
   }
 });
 
@@ -78,12 +79,12 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
-router.get('/signup', (req, res) => {
-  if (req.session.logged_In) {
-    res.redirect('/signup');
-    return;
-  }
-  res.render('signup');
-});
+// router.get('/signup', (req, res) => {
+//   if (req.session.logged_in) {
+//     res.redirect('/profile');
+//     return;
+//   }
+//   res.render('signup');
+// });
 
 module.exports = router;
